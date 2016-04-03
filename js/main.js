@@ -105,6 +105,7 @@ function displaySearchResults(){
 
 function displaySuggestions(){
     $("#suggestions").empty()
+    document.getElementById("suggestions").setAttribute("style", "height:400px;");
     for(var i=0; i<suggestions.length; i++){
         var vidrow=getVidRow(suggestions[i]);
         $(vidrow).addClass("item-search");
